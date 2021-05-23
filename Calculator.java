@@ -23,7 +23,7 @@ public class Calculator {
 	
 	
 	public static void main(String[] args) {
-		Calculator value1 = new Calculator(5);
+		Calculator value1 = new Calculator();
 		
 		value1.findFactorial();
 		}

@@ -9,10 +9,9 @@ public class Calculator {
 	
 	public void findFactorial() {
 		int y = number;
-		int x;
 		int result = 1;
 		
-		for (x = 0; x < y; x++) 
+		for (int x = 0; x < y; x++) 
 		{
 			result *= number;
 			number -= 1;

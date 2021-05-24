@@ -1,20 +1,19 @@
 package practice;
 
-public class Calculator {
-	public int number;
+public class Factorial {
+	public int x;
 	
-	public Calculator(int x) {
-		this.number = x; 
+	public Factorial(int x) {
+		this.x = x; 
 	}
 	
 	public void findFactorial() {
-		int y = number;
+		int y = x;
 		int result = 1;
-		
-		for (int x = 0; x < y; x++) 
+		for (int z = 0; z < y; z++) 
 		{
-			result *= number;
-			number -= 1;
+			result *= x;
+			x -= 1;
 		}
 		System.out.println(result);
 		
@@ -22,9 +21,8 @@ public class Calculator {
 	
 	
 	public static void main(String[] args) {
-		Calculator value1 = new Calculator();
-		
+		int value = Integer.parseInt(args[0]);
+		Factorial value1 = new Factorial(value);
 		value1.findFactorial();
 		}
-	
 }

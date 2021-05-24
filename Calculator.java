@@ -21,8 +21,7 @@ public class Factorial {
 	
 	
 	public static void main(String[] args) {
-		int value = Integer.parseInt(args[0]);
-		Factorial value1 = new Factorial(value);
+		Factorial value1 = new Factorial(Integer.parseInt(args[0]));
 		value1.findFactorial();
 		}
 }
